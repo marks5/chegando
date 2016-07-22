@@ -1,0 +1,16 @@
+li { 
+	font-size: 1.3em;
+	padding-left: 5%;
+}
+
+.impar {
+    background-color:#XXXXXX; 
+}
+.par {
+    background-color:#FFF0DB; 
+}
+.fontmod { 
+	font-family: calibri;
+	margin-left: 0.5em;
+	font-weight: bold;
+}

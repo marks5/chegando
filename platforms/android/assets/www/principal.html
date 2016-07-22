@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Ajuste de zoom no celular, não toque :3 -->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/principal.css"/>
+		<title>Tela 3 - Tela Principal</title>	
+		 
+	</head>			
+		<body class="fadeIn"> 
+			<header>
+				<div id="menu-icon" onclick="slidetoggle()">
+				<span class="menu-icon-bar"></span>
+				<span class="menu-icon-bar"></span>
+				<span class="menu-icon-bar"></span>
+				</div>
+				<div id="content-menu">			
+					<h1 id="h1-menu">Olimpiadas Rio<br>2016</h1>
+					<nav id="content">
+						<div class="navbar">
+							<a  onClick="principal()"><img src="images/iconehome.png" class="menu-slider-icon"/ onClick="principal()"><span class="txtalign">HOME</span></a>
+						</div >
+						<div class="navbar">
+							<a onClick="agenda()"><img src="images/iconecalendario.png" class="menu-slider-icon"/><span class="txtalign">AGENDA</span></a>
+						</div>
+						<div class="navbar">
+							<a onClick="esportes()"><img src="images/iconecorredor.png" class="menu-slider-icon"/><span class="txtalign">ESPORTES</span></a>
+						</div>
+						<div class="navbar">	
+							<a onClick="locais()"><img src="images/iconemapa.png" class="menu-slider-icon"/><span class="txtalign">LOCAIS</span></a>
+						</div>	
+						<hr id="menu-slider-hr">
+						<div class="navbar">
+							<a onClick="opcoes()"><img src="images/iconeengrenagem.png" class="menu-slider-icon"/><span class="txtalign">OPÇÕES</span></a>
+						</div>
+					</nav>
+				</div>
+								
+				<div>
+					<h1 id="tituloPrincipal">Olimpíadas Rio 2016</h1>
+				</div>
+			</header>
+			
+			<div id="content"> 
+					<div class="pc100">
+						<div class="imagem">
+							<span id="textoLegenda">Cerimônia de Abertura das Olimpíadas de 2016 <br> 05/08/2016 - 20h. </span>	
+					</div>
+				</div>
+					<div class="pc100">
+						<h2>Destaques</h2>
+				</div>
+
+				<div class="linha">
+					<div class="pc30">
+					<a href="evento.html"><div id="volei">
+						</div></a>
+					</div>
+					<div class="pc70">
+						<h3>Voleibol Femino</h3>
+						<p class="bigText">06/08/2016 - 09:30</p>
+						<p class="bigText">Maracanãzinho, RJ - Maracanã</p>
+					</div>
+				</div>
+
+				<div class="linha">
+						<div class="pc30">
+					<a href="evento.html">	<div id="atletismo"> 
+						</div></a>
+					</div>
+					<div class="pc70">
+						<h3>Boxe</h3>
+						<p class="bigText">05/08/2016 - 14:00h</p>
+						<p class="bigText">Rio Centro Pavilhão 6 - RJ, Barra da Tijuca</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="shadow" class="shadow" onclick="slideclose()">
+			</div>
+
+			<script src="js/script.js"></script>
+		</body>
+</html>

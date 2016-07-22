@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">		
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Ajuste de zoom no celular, nÃ£o toque :3 -->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/agenda.css"/>
+		 
+		
+		<title>Agenda</title>	
+	</head>			
+		<body class="fadeIn"> 
+			<header>
+			<div id="menu-icon" onclick="slidetoggle()">
+				<span class="menu-icon-bar"></span>
+				<span class="menu-icon-bar"></span>
+				<span class="menu-icon-bar"></span>
+				</div>
+				<div id="content-menu">			
+					<h1 id="h1-menu">Olimpiadas Rio<br>2016</h1>
+					<nav id="content">
+						<div class="navbar">
+							<a  onClick="principal()"><img src="images/iconehome.png" class="menu-slider-icon"/ onClick="principal()"><span class="txtalign">HOME</span></a>
+						</div >
+						<div class="navbar">
+							<a onClick="agenda()"><img src="images/iconecalendario.png" class="menu-slider-icon"/><span class="txtalign">AGENDA</span></a>
+						</div>
+						<div class="navbar">
+							<a onClick="esportes()"><img src="images/iconecorredor.png" class="menu-slider-icon"/><span class="txtalign">ESPORTES</span></a>
+						</div>
+						<div class="navbar">	
+							<a onClick="locais()"><img src="images/iconemapa.png" class="menu-slider-icon"/><span class="txtalign">LOCAIS</span></a>
+						</div>	
+						<hr id="menu-slider-hr">
+						<div class="navbar">
+							<a onClick="opcoes()"><img src="images/iconeengrenagem.png" class="menu-slider-icon"/><span class="txtalign">OPÇÕES</span></a>
+						</div>
+					</nav>
+				</div>
+				<div>
+				<div>	
+					<ul></ul>
+					<h1> Agenda</h1>
+				</div>
+			</header>
+			<div id="content">
+				<div class="linha" id="search">
+						<section class="main">
+							<form class="search" method="post" action="index.html" >
+								<input type="text" name="q" placeholder="Search..." />
+							</form>
+						</section>
+				</div>
+				<div class="linha" id="event">
+					<div class="pc30">
+					<a href="evento.html">	<img id="icon" src="images/atletismo.png"/> </a>
+						</div>
+					<div class="pc70" >
+					<a href="notificacao.html">	<img id="bell" align="right" src="images/bell.png"/></a>
+						<h2 class="fonth2"> Atletismo</h2>			   			   
+						<p class="tamfont">12/08/2016 - 09:30h às 13:10h</p>
+						<p class="tamfont">Estádio Olímpico, Engenhão</br>Engenho de Dentro, RJ</p>
+					</div>
+			    </div>
+				
+				<div class="linha" id="event">
+					<div class="pc30">
+					<a href="evento.html">	<img id="icon" src="images/atletismo.png"/> </a>
+					</div>
+					<div class="pc70">
+					<a href="notificacao.html">	<img id="bell" align="right" src="images/bell2.png"/></a>
+						<h2 class="fonth2"> Atletismo </h2>	
+						<p class="tamfont">12/08/2016 - 09:30h às 13:10h</p>
+						<p class="tamfont">Estádio Olímpico, Engenhão</br>Engenho de Dentro, RJ</p>
+					</div>
+				</div>
+				
+				<div class="linha" id="event">	
+					<div class="pc30">
+					<a href="evento.html">	<img id="icon" src="images/atletismo.png"></a>		  
+					</div>
+					<div class="pc70">
+					<a href="notificacao.html">	<img id="bell" align="right" src="images/bell.png"/></a>
+						<h2 class="fonth2"> Atletismo </h2>	
+						<p class="tamfont"> 12/08/2016 - 22:20h às 23:25h <p>
+						<p class="tamfont"> Estádio Olímpico, Engenhão</br>Engenho de Dentro, RJ</p>
+					</div>  
+				</div>
+			
+			</div> 
+			
+			<div id="shadow" class="shadow" onclick="slideclose()">
+			</div>
+			<script src="js/script.js"></script>
+		</body>
+</html>
