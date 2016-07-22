@@ -5,10 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Ajuste de zoom no celular, não toque :3 -->
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="css/opcoes.css"/>
+		<script src="js/traduzir.js"></script>
 		 
 		<title>Opções</title>	
 	</head>			
-		<body class="fadeIn"> 
+		<body class="fadeIn" onload="alterarinformacoesOpcoes()"> 
 			<header>
 				<div id="menu-icon" onclick="slidetoggle()">
 				<span class="menu-icon-bar"></span>
@@ -22,44 +23,23 @@
 							<a  onClick="principal()"><img src="images/iconehome.png" class="menu-slider-icon"/ onClick="principal()"><span class="txtalign">HOME</span></a>
 						</div >
 						<div class="navbar">
-							<a onClick="agenda()"><img src="images/iconecalendario.png" class="menu-slider-icon"/><span class="txtalign">AGENDA</span></a>
+							<a onClick="agenda()"><img src="images/iconecalendario.png" class="menu-slider-icon"/><span class="txtalign" id="agenda">AGENDA</span></a>
 						</div>
 						<div class="navbar">
-							<a onClick="esportes()"><img src="images/iconecorredor.png" class="menu-slider-icon"/><span class="txtalign">ESPORTES</span></a>
+							<a onClick="esportes()"><img src="images/iconecorredor.png" class="menu-slider-icon"/><span class="txtalign" id="esportes">ESPORTES</span></a>
 						</div>
 						<div class="navbar">	
-							<a onClick="locais()"><img src="images/iconemapa.png" class="menu-slider-icon"/><span class="txtalign">LOCAIS</span></a>
+							<a onClick="locais()"><img src="images/iconemapa.png" class="menu-slider-icon"/><span class="txtalign" id="locais">LOCAIS</span></a>
 						</div>	
 						<hr id="menu-slider-hr">
 						<div class="navbar">
-							<a onClick="opcoes()"><img src="images/iconeengrenagem.png" class="menu-slider-icon"/><span class="txtalign">OPÇÕES</span></a>
-						</div>
-					</nav>
-				</div>
-				<div id="content-menu">			
-					<h1 id="h1-menu">Olimpíadas Rio<br>2016</h1>
-					<nav id="content">
-						<div class="navbar">
-							<a href="principal.html"><img src="images/icone_home.png" class="menu-slider-icon"/><span class="txtalign">HOME</span></a>
-						</div >
-						<div class="navbar">
-							<a href="agenda.html"><img src="images/icone_calendario.png" class="menu-slider-icon"/><span class="txtalign">AGENDA</span></a>
-						</div>
-						<div class="navbar">
-							<a href="esportes.html"><img src="images/icone_corredor.png" class="menu-slider-icon"/><span class="txtalign">ESPORTES</span></a>
-						</div>
-						<div class="navbar">	
-							<a href="locais.html"><img src="images/icone_mapa.png" class="menu-slider-icon"/><span class="txtalign">LOCAIS</span></a>
-						</div>	
-						<hr id="menu-slider-hr">
-						<div class="navbar">
-							<a href="opcoes.html"><img src="images/icone_engrenagem.png" class="menu-slider-icon"/><span class="txtalign">OPÇÕES</span></a>
+							<a onClick="opcoes()"><img src="images/iconeengrenagem.png" class="menu-slider-icon"/><span class="txtalign" id="opcoes">OPÇÕES</span></a>
 						</div>
 					</nav>
 				</div>
 			
 				<div>
-					<h1> Opções </h1>
+					<h1 id="titulo"> Opções </h1>
 				</div>
 				
 			</header>
@@ -73,7 +53,7 @@
 					<input type="checkbox">
 					<div class="slider round"></div>
 					</label>
-					<p class="description">Lembrar com antecedência de:</p>
+					<p class="description" id="notificacao">Lembrar com antecedência de:</p>
 					
 					<form>
 						<input type="checkbox" name="checkbox" class="checkbox">12:00</input><br>
@@ -83,25 +63,25 @@
 				</section>
 				
 				<section id="idiomas">
-					<h2>Idiomas</h2>
+					<h2 id="tituloidioma">Idiomas</h2>
 					<form>
 						<div class="radio">
-						<input type="radio" id="idioma_radio" name="idioma"><img src="images/pt_br.png" width="1.5em">PORTUGUÊS</input><br>
+						<input type="radio" id="idioma_radioPT" name="idioma" onclick="setaridiomaOpc(1)" checked ><img src="images/ptbr.png" width="1.5em" >PORTUGUÊS</input><br>
 						</div>
 						<div class="radio">
-						<input type="radio" id="idioma_radio" name="idioma"><img src="images/us_en.png" width="1.5em" height="15em">ENGLISH</input><br>
+						<input type="radio" id="idioma_radioEN" name="idioma" onclick="setaridiomaOpc(2)"><img src="images/usen.png" width="1.5em" height="15em" onclick="setaridiomaOpc(2)">ENGLISH</input><br>
 						</div>
 					</form>
 				</section>
 				
 				<section id="sobre">
-					<h2>Sobre</h2>
-					<p class="description">Versão: xxx</p>
+					<h2 id="info">Sobre</h2>
+					<p class="description" id="versao">Versão: xxx</p>
 				</section>
 				<hr>
 				<section id="desenvolvedores">
-					<p class="description">Desenvolvedores</p>
-					<p class="description">Texto sobre os desenvolvedores</p>
+					<p class="description" id="desenvolvedores">Desenvolvedores</p>
+					<p class="description" id ="textodev">Texto sobre os desenvolvedores</p>
 				</section>
 				</div>
 			<div id="shadow" class="shadow" onclick="slideclose()">
