@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="js/traduzir.js"></script>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Displaying text directions with <code>setPanel()</code></title>
@@ -77,7 +78,7 @@
     </style>
     <!-- Fim do css -->
   </head>
-  <body>
+  <body onload="alterarinformacoesMapa()">
   <!--Painel flutuante com a escolha dos lugares de destino-->
     <div id="floating-panel">
       <br>
@@ -103,24 +104,24 @@
 							<a  onClick="principal()"><img src="images/iconehome.png" class="menu-slider-icon"/ onClick="principal()"><span class="txtalign">HOME</span></a>
 						</div >
 						<div class="navbar">
-							<a onClick="agenda()"><img src="images/iconecalendario.png" class="menu-slider-icon"/><span class="txtalign">AGENDA</span></a>
+							<a onClick="agenda()"><img src="images/iconecalendario.png" class="menu-slider-icon"/><span class="txtalign" id="agenda">AGENDA</span></a>
 						</div>
 						<div class="navbar">
-							<a onClick="esportes()"><img src="images/iconecorredor.png" class="menu-slider-icon"/><span class="txtalign">ESPORTES</span></a>
+							<a onClick="esportes()"><img src="images/iconecorredor.png" class="menu-slider-icon"/><span class="txtalign" id="esportes">ESPORTES</span></a>
 						</div>
 						<div class="navbar">	
-							<a onClick="locais()"><img src="images/iconemapa.png" class="menu-slider-icon"/><span class="txtalign">LOCAIS</span></a>
+							<a onClick="locais()"><img src="images/iconemapa.png" class="menu-slider-icon"/><span class="txtalign" id="locais">LOCAIS</span></a>
 						</div>	
 						<hr id="menu-slider-hr">
 						<div class="navbar">
-							<a onClick="opcoes()"><img src="images/iconeengrenagem.png" class="menu-slider-icon"/><span class="txtalign">OPÇÕES</span></a>
+							<a onClick="opcoes()"><img src="images/iconeengrenagem.png" class="menu-slider-icon"/><span class="txtalign" id="opcoes">OPÇÕES</span></a>
 						</div>
 					</nav>
 				</div>
 				<div>
 				<div>	
 					<ul></ul>
-					<h1>Rota</h1>
+					<h1 id="titulo">Rota</h1>
 				</div>
 			</header>
     <!--Fim do painel flutuante -->
