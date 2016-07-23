@@ -2,15 +2,30 @@
 	width:100%;
 	height:100%;
 }
-#bell{ /* Ajustar o tamanho*/
+/*#bell{    Ajustar o tamanho
 	width:10%;
 	height:10%;
-}
+}*/
 .fonth2 {
 	font-size:1.5em;		
 }
 .pc70{
 	padding-left:5%;
+}
+.pc60{
+    position: relative;
+    float: left;
+    width: 60%;
+    padding-left: 5%;
+    height: 100%;
+}
+.pc10{
+    position: relative;
+    float: left;
+    width: 10%;
+}
+.pc30{
+    height: 100%;
 }
 
 .tamfont {
@@ -20,10 +35,12 @@
 #search{
 	margin:2%;
 	padding:2%;
+    height: 40px;
 }
 #event{
 	margin:5%;
-	padding-top:8%;
+	/*padding-top:8%;*/
+    margin-left: 0%;
 }
 .linha {
     height: 100px;

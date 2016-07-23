@@ -24,12 +24,12 @@ for (var i = 0; i < eventos.length; i++){
 			nomeEsporte = esp[e].nome;
 			};
 		}
-	var inserirInfos = '<div class="linha" id="event"><a href="'+link+'"><div class="pc30"><a href="evento.html">\
+	var inserirInfos = '<div class="linha" id="event"><a href="'+link+'"><div class="pc30">\
 	<img id="icon" src="images/' + linkimg2 +
-	'.png"/> </a></div><div class="pc70" ><a href="notificacao.html"><img id="bell" align="right"\
-	src="images/bell.png"/></a><h2 class="fonth2">'+ nomeEsporte +
+	'.png"/></div><div class="pc60"><h2 class="fonth2">'+ nomeEsporte +
 	'</h2><p class="tamfont">'+ data +'-' + horario + 
-	'</p><p class="tamfont">'+ local + '</p></div></a></div>'; //html
+	'</p><p class="tamfont">'+ local + '</p></div></a><div class="pc10"><a href="notificacao.html?idevento='+i+'"><img width="30px" height="40px" id="bell" align="right"\
+	src="images/bell.png"/></div></a></div>'; //html
 	listaEventos.innerHTML += inserirInfos;
 };
 
