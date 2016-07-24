@@ -5,20 +5,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Ajuste de zoom no celular, não toque :3 -->
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="css/locais.css"/>
-		<script type="text/javascript" src="js/Navegacao.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/agenda.css"/>
-		<script src="js/script.js"></script>
 		<script src="json/local.js"></script>
-		<script src="js/Navegacao.js"></script>
-		<script src="js/traduzir.js"></script>
+		<script src="js/script.js"></script>
+
 		
 		<title>Locais</title>	
 	</head>			
-		<body class="fadeIn" onload="alterarinformacoesLocais()"> 
+		<body class="fadeIn" data-ng-app="locais"> 
 			<header>
 				<div id="menu-icon" onclick="slidetoggle()">
-				<span class="menu-icon-bar"></span>
-				<span class="menu-icon-bar"></span>
+					<span class="menu-icon-bar"></span>
+					<span class="menu-icon-bar"></span>
 				<span class="menu-icon-bar"></span>
 				</div>
 				<div id="content-menu">			
@@ -28,22 +26,22 @@
 							<a  onClick="principal()"><img src="images/iconehome.png" class="menu-slider-icon"/ onClick="principal()"><span class="txtalign">HOME</span></a>
 						</div >
 						<div class="navbar">
-							<a onClick="agenda()"><img src="images/iconecalendario.png" class="menu-slider-icon"/><span class="txtalign" id="agenda">AGENDA</span></a>
+							<a onClick="agenda()"><img src="images/iconecalendario.png" class="menu-slider-icon"/><span class="txtalign">AGENDA</span></a>
 						</div>
 						<div class="navbar">
-							<a onClick="esportes()"><img src="images/iconecorredor.png" class="menu-slider-icon"/><span class="txtalign" id="esportes">ESPORTES</span></a>
+							<a onClick="esportes()"><img src="images/iconecorredor.png" class="menu-slider-icon"/><span class="txtalign">ESPORTES</span></a>
 						</div>
 						<div class="navbar">	
-							<a onClick="locais()"><img src="images/iconemapa.png" class="menu-slider-icon"/><span class="txtalign" id="locais">LOCAIS</span></a>
+							<a onClick="locais()"><img src="images/iconemapa.png" class="menu-slider-icon"/><span class="txtalign">LOCAIS</span></a>
 						</div>	
 						<hr id="menu-slider-hr">
 						<div class="navbar">
-							<a onClick="opcoes()"><img src="images/iconeengrenagem.png" class="menu-slider-icon"/><span class="txtalign" id="opcoes">OPÇÕES</span></a>
+							<a onClick="opcoes()"><img src="images/iconeengrenagem.png" class="menu-slider-icon"/><span class="txtalign">OPÇÕES</span></a>
 						</div>
 					</nav>
 				</div>
 				<div>
-					<h1 id="titulo"> Locais </h1>
+					<h1> Locais </h1>
 				</div>
 			</header>
             <div id="locaisaqui">
