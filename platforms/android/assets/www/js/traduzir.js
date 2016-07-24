@@ -127,6 +127,19 @@ function alterarinformacoesLocais(){
     };
      };
 
+function alterarinformacoesMapa(){
+    ididioma =  window.localStorage.getItem("ididioma");
+    console.log(ididioma);
+    if (ididioma == 2){
+
+        document.querySelector("#agenda").innerHTML="EVENTS";
+        document.querySelector("#esportes").innerHTML="SPORTS";
+        document.querySelector("#locais").innerHTML="PLACES";
+        document.querySelector("#opcoes").innerHTML="OPTIONS";
+        document.querySelector("#titulo").innerHTML="Route";
+    };
+}
+
      function alterarinformacoesOpcoes(){
     ididioma =  window.localStorage.getItem("ididioma");
     console.log(ididioma);
@@ -146,22 +159,21 @@ function alterarinformacoesLocais(){
         document.querySelector("#desenvolvedores").innerHTML="Developers";
         document.querySelector("#textodev").innerHTML="Developers";
 
-
-
-        
-   
-        
-       
-
-
     };
      };
 
+function alterarinformacoesLocal(){
+    ididioma =  window.localStorage.getItem("ididioma");
+    console.log(ididioma);
+    if (ididioma == 2){
 
-
-
-
-
+        document.querySelector("#agenda").innerHTML="EVENTS";
+        document.querySelector("#esportes").innerHTML="SPORTS";
+        document.querySelector("#locais").innerHTML="PLACES";
+        document.querySelector("#opcoes").innerHTML="OPTIONS";
+        document.querySelector("#titulo").innerHTML="Place";
+    };
+}
 
 
 
