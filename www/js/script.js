@@ -12,9 +12,14 @@ function slidetoggle() {
       }
     }
 function slideclose() {
+      if (document.getElementById("alertaNotificacao").style.display == "inherit") {
+         document.getElementById("shadow").className += " is-active"
+      }
+      else {
       var slider = document.getElementById("content-menu");
       document.getElementById("shadow").className = "shadow";
       slider.style.left = "-500px";
+    }
     }
 
 // Redirecionar Menu

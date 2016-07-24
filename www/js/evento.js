@@ -26,20 +26,36 @@ for (var i = 0; i < eventos.length; i++){
 	var local = eventos[i].local;
 	var idevento = eventos[i].idevento;
 	var idesporte = eventos[i].idesporte;
+	for (var a = 0; a < local.length; a++) {
+		if (eventos[i].idlocal == local[a].idlocal) {
+			var latitude = local[a].lagitude;
+			var longitude = local[a].longitude;
+		};
+	};
+
 	if (idevento == idPagina) {	
 		var eventoUnico = document.getElementById("eventoUnico");
 		for (var e = 0; e < esp.length; e++) {
 			if (esp[e].idesporte == idesporte) {
 				nomeEsporte = esp[e].nome;
 				};
-			}
+			for (var u=0; u < categoria.length; u++) {
+			if (categoria[u].idesporte == idesporte)
+				if (categoria[u].idmodalidade == -1) { //verifica se tem modalidade	
+			    link = "categoria.html?id="+ idesporte ; //pag seguinte se n tiver modalidade    
+				}
+				else {
+				link = "modalidades.html?id="+ idesporte ; //pag seguinte se tiver modalidade		
+				};
+			};
+		}
 		var inserirInfos = '<div id="content"><h2 id="titulo">' + nomeEsporte +
-		'</h2><a href="descricao.html"><button class="myButton">Regras</button></a>\
+		'</h2><a href="'+ link +'"><button class="myButton">Regras</button></a>\
 		<div class="linhaEvento"><h3 class="tituloEvento">Data:</h3><p>'+ data +
 		'</p></div><div class="linhaEvento"><h3 class="tituloEvento">Times:</h3><p>'+ /*times*/"nao tem" +
 		'</div><div class="linhaEvento"><h3 class="tituloEvento">Horário:</h3><p>' + horario + 
 		'</p></div><div class="linhaEvento"><h3 class="tituloEvento">Local:</h3><p>'+ local +
-		'</p></div><a href="confirmacao.html"><button class="myButton">Como chegar</button></a>'; //html
+		'</p></div><a href="mapa.html?latitude='+latitude+'&longitude='+longitude+'"><button class="myButton">Como chegar</button></a>'; //html
 		eventoUnico.innerHTML += inserirInfos;
 	}
 };

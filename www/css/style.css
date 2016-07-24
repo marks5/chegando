@@ -170,6 +170,7 @@ img {
 
 .linha {
 	clear: both;
+	margin-bottom: 5%;
 }
 .pc100 { /*100% da linha*/
 	position: relative;
