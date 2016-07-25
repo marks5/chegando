@@ -43,12 +43,6 @@ function idiomaselecionado() {
  };
 };
 
-    
-
-
-
-
-
 function alterarinformacoesPrincipal(){
     ididioma =  window.localStorage.getItem("ididioma");
     console.log(ididioma);
@@ -70,34 +64,18 @@ function alterarinformacoesPrincipal(){
      };
 
      function alterarinformacoesAgenda(){
-    ididioma =  window.localStorage.getItem("ididioma");
+    ididioma = window.localStorage.getItem("ididioma");
     console.log(ididioma);
-    if (ididioma == 2){
-
+    if (ididioma == 2){    
         document.querySelector("#agenda").innerHTML="EVENTS";
         document.querySelector("#esportes").innerHTML="SPORTS";
         document.querySelector("#locais").innerHTML="PLACES";
         document.querySelector("#opcoes").innerHTML="OPTIONS";
-        document.querySelector("#titulo").innerHTML="Events";   
-    };
-     };
-
-     function alterarinformacoesAgenda(){
-    ididioma =  window.localStorage.getItem("ididioma");
-    console.log(ididioma);
-    if (ididioma == 2){
-
-        document.querySelector("#agenda").innerHTML="EVENTS";
-        document.querySelector("#esportes").innerHTML="SPORTS";
-        document.querySelector("#locais").innerHTML="PLACES";
-        document.querySelector("#opcoes").innerHTML="OPTIONS";
-
-        document.querySelector("#titulo").innerHTML="Events";
-   
-        
-       
-
-
+        document.querySelector("#titulo").innerHTML="Events"; 
+        document.querySelector("#not1").textContent="When you clicking the bell you will receive a notification about it";
+        document.querySelector("#not2").textContent="Do you want to be notified?";
+        document.querySelector("#buttonSim").innerHTML="Yes";
+        document.querySelector("#buttonNo").innerHTML="No";  
     };
      };
 
@@ -110,12 +88,7 @@ function alterarinformacoesEsporte(){
         document.querySelector("#esportes").innerHTML="SPORTS";
         document.querySelector("#locais").innerHTML="PLACES";
         document.querySelector("#opcoes").innerHTML="OPTIONS";
-
-        document.querySelector("#titulo").innerHTML="Sports";
-   
-        
-       
-
+        document.querySelector("#titulo").innerHTML="Sports";     
 
     };
      };

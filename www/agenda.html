@@ -8,7 +8,6 @@
 		<script src="js/traduzir.js"></script>
 		<script src="json/esp.js"></script>
 		<script src="json/eventos.js"></script>
-		<script src="json/eventoesporte.js"></script>
 		<script src="json/local.js"></script>
 		
 		<title>Agenda</title>	
@@ -47,11 +46,12 @@
 				</div>
 			</header>
 			<div id="alertaNotificacao">
-				<p>Ao clicar no Sino você receberá uma notificação sobre ele quando
+				<p id="not1">Ao clicar no Sino você receberá uma notificação sobre ele quando
 					estiver próximo de acontecer. </p>
-				<p class="centralizar">Deseja ser Notificado?</p>
+				<p class="centralizar" id="not2">Deseja ser Notificado?</p>
 				
-				<button id="buttonSim" onclick="notificar(); fecharAviso()">Sim</button><button onclick="fecharAviso()">Não</button>
+				<button id="buttonSim" onclick="notificar(); fecharAviso()">Sim</button>
+				<button id="buttonNo" onclick="fecharAviso()">Não</button>
 			</div>
 			
 			<div id="content">

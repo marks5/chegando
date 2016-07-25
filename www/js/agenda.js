@@ -29,7 +29,7 @@ for (var i = 0; i < eventos.length; i++){
 	<img id="icon" src="images/'+ linkimg2 +'.png"/> </a></div><div class="pc70"><a href="'+link+'">\
 	<h2 class="fonth2">'+ nomeEsporte +'</h2> <p class="tamfont">'+ data + '-' + horario +'</p>\
 	<p class="tamfont">'+local+'</p></a></div>\
-	<img id="bell" align="right" src="images/bell.png" onclick="avisonotificacao()"/></div>'; //html
+	<img id="bell" align="right" src="images/bell.png" onclick="avisonotificacao(); alterarinformacoesAgenda()"/></div>'; //html
 	listaEventos.innerHTML += inserirInfos;
 };
 
