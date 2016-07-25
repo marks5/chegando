@@ -24,14 +24,29 @@ for (var i = 0; i < eventos.length; i++){
 			nomeEsporte = esp[e].nome;
 			};
 		}
-	var inserirInfos = '<div class="linha" id="event"><a href="'+link+'"><div class="pc30">\
-	<img id="icon" src="images/' + linkimg2 +
-	'.png"/></div><div class="pc60"><h2 class="fonth2">'+ nomeEsporte +
-	'</h2><p class="tamfont">'+ data +'-' + horario + 
-	'</p><p class="tamfont">'+ local + '</p></div></a><div class="pc10"><a href="notificacao.html?idevento='+i+'"><img width="30px" height="40px" id="bell" align="right"\
-	src="images/bell.png"/></div></a></div>'; //html
+		data, horario, local
+	var inserirInfos = '<div class="linha pc100"><div class="pc30"><a href="'+link+'">\
+	<img id="icon" src="images/'+ linkimg2 +'.png"/> </a></div><div class="pc70"><a href="'+link+'">\
+	<h2 class="fonth2">'+ nomeEsporte +'</h2> <p class="tamfont">'+ data + '-' + horario +'</p>\
+	<p class="tamfont">'+local+'</p></a></div>\
+	<img id="bell" align="right" src="images/bell.png" onclick="avisonotificacao()"/></div>'; //html
 	listaEventos.innerHTML += inserirInfos;
 };
+
+function avisonotificacao(){
+	document.getElementById("shadow").className += " is-active";
+	document.getElementById("alertaNotificacao").style.display = "inherit";
+	document.getElementById("alertaNotificacao").style.zIndex = "200";
+}
+function fecharAviso(){
+	document.getElementById("shadow").className = "shadow";
+	document.getElementById("alertaNotificacao").style.display = "none";
+}
+function notificar(){
+	console.log("funciona");
+}
+
+
 
 function removerAcentos(stringcomacento){
 	var string = stringcomacento;

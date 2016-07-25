@@ -1,5 +1,6 @@
 var eventos = [  
    {  "idevento": 3,
+     "idlocal": 3,
 	"idesporte":2,
 	"idcategoria": 2,
 	"idmodalidade": -1,
@@ -10,6 +11,7 @@ var eventos = [
    },
    {  
       "idevento": 2,
+      "idlocal": 3,
 	"idesporte":2,
 	"idcategoria": 2,
 	"idmodalidade": -1,
@@ -20,6 +22,7 @@ var eventos = [
    },
    {  
       "idevento": 1,
+      "idlocal": 3,
 	"idesporte":1,
 	"idcategoria": 1,
 	"idmodalidade": -1,
