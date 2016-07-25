@@ -23,7 +23,7 @@ console.log(idPagina);
 for (var i = 0; i < eventos.length; i++){
 	var data = eventos[i].data;
 	var horario = eventos[i].horario;
-	var local = eventos[i].local;
+	var local2 = eventos[i].local;
 	var idevento = eventos[i].idevento;
 	var idesporte = eventos[i].idesporte;
 	for (var a = 0; a < local.length; a++) {
@@ -54,7 +54,7 @@ for (var i = 0; i < eventos.length; i++){
 		<div class="linhaEvento"><h3 class="tituloEvento">Data:</h3><p>'+ data +
 		'</p></div><div class="linhaEvento"><h3 class="tituloEvento">Times:</h3><p>'+ /*times*/"nao tem" +
 		'</div><div class="linhaEvento"><h3 class="tituloEvento">Horário:</h3><p>' + horario + 
-		'</p></div><div class="linhaEvento"><h3 class="tituloEvento">Local:</h3><p>'+ local +
+		'</p></div><div class="linhaEvento"><h3 class="tituloEvento">Local:</h3><p>'+ local2 +
 		'</p></div><a href="mapa.html?latitude='+latitude+'&longitude='+longitude+'"><button class="myButton">Como chegar</button></a>'; //html
 		eventoUnico.innerHTML += inserirInfos;
 	}
