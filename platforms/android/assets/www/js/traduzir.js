@@ -78,6 +78,19 @@ function alterarinformacoesPrincipal(){
         document.querySelector("#esportes").innerHTML="SPORTS";
         document.querySelector("#locais").innerHTML="PLACES";
         document.querySelector("#opcoes").innerHTML="OPTIONS";
+        document.querySelector("#titulo").innerHTML="Events";   
+    };
+     };
+
+     function alterarinformacoesAgenda(){
+    ididioma =  window.localStorage.getItem("ididioma");
+    console.log(ididioma);
+    if (ididioma == 2){
+
+        document.querySelector("#agenda").innerHTML="EVENTS";
+        document.querySelector("#esportes").innerHTML="SPORTS";
+        document.querySelector("#locais").innerHTML="PLACES";
+        document.querySelector("#opcoes").innerHTML="OPTIONS";
 
         document.querySelector("#titulo").innerHTML="Events";
    
