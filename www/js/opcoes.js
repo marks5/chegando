@@ -23,3 +23,55 @@ if(opcaoidioma == 1){
 						</div>\
 					</form>';
 }
+
+var opcaoantecedencia = window.localStorage.getItem("antecedencia");
+
+if(opcaoantecedencia == 12){
+	console.log("12 hrs de antecedencia");
+	document.querySelector("#antecedencias").innerHTML='<form>\
+						<div class="divnotificacao">\
+						<input type="radio" id="antecedencia12" name="antecedencia" onclick="setarAntecedenciaOpc(12)" checked>12:00</input><br>\
+						</div>\
+						<div class="divnotificacao">\
+						<input type="radio" id="antecedencia6" name="antecedencia" onclick="setarAntecedenciaOpc(6)">06:00</input><br>\
+						</div>\
+						<div class="divnotificacao">\
+						<input type="radio" id="antecedencia1" name="antecedencia" onclick="setarAntecedenciaOpc(1)">01:00</input><br>\
+						</div>\
+					</form>';
+}else{
+	if (opcaoantecedencia == 6){
+		console.log("6 hrs de antecedencia");
+		document.querySelector("#antecedencias").innerHTML='<form>\
+						<div class="divnotificacao">\
+						<input type="radio" id="antecedencia12" name="antecedencia" onclick="setarAntecedenciaOpc(12)">12:00</input><br>\
+						</div>\
+						<div class="divnotificacao">\
+						<input type="radio" id="antecedencia6" name="antecedencia" onclick="setarAntecedenciaOpc(6)"checked>06:00</input><br>\
+						</div>\
+						<div class="divnotificacao">\
+						<input type="radio" id="antecedencia1" name="antecedencia" onclick="setarAntecedenciaOpc(1)">01:00</input><br>\
+						</div>\
+					</form>';
+	}else{
+		console.log("1 hr de antecedencia");
+		document.querySelector("#antecedencias").innerHTML='<form>\
+						<div class="divnotificacao">\
+						<input type="radio" id="antecedencia12" name="antecedencia" onclick="setarAntecedenciaOpc(12)">12:00</input><br>\
+						</div>\
+						<div class="divnotificacao">\
+						<input type="radio" id="antecedencia6" name="antecedencia" onclick="setarAntecedenciaOpc(6)">06:00</input><br>\
+						</div>\
+						<div class="divnotificacao">\
+						<input type="radio" id="antecedencia1" name="antecedencia" onclick="setarAntecedenciaOpc(1)" checked>01:00</input><br>\
+						</div>\
+					</form>';
+	}
+	
+}
+
+
+function setarAntecedenciaOpc(antecedencia){
+	window.localStorage.setItem("antecedencia", antecedencia);
+	
+}

@@ -61,7 +61,7 @@ h3 {
 
 .linha {
 	height: 110px;
-	margin-bottom: 5%;
+	margin-bottom: 0%;
 }
 
 					/* FIM TELA PRINCIPAL*/
@@ -70,7 +70,16 @@ h3 {
 
 h2 {
 	font-size: 1.8em;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
+}
+
+.fonth2{
+	margin-bottom: 0%;
+
+}
+
+.tamfont{
+	font-size: 1em;
 }
 
 .tituloEvento {
@@ -101,6 +110,10 @@ button {
 
 p {
 	font-size: 1.2em;
+}
+
+#naohaevento{
+	color: black;
 }
 
 					/*FIM DETALHAMENTO EVENTO*/

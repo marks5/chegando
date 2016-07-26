@@ -9,6 +9,8 @@
 		<script src="json/esp.js"></script>
 		<script src="json/eventos.js"></script>
 		<script src="json/local.js"></script>
+		<script src="js/notificacao.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
 		
 		<title>Agenda</title>	
 	</head>			
@@ -50,7 +52,7 @@
 					estiver próximo de acontecer. </p>
 				<p class="centralizar" id="not2">Deseja ser Notificado?</p>
 				
-				<button id="buttonSim" onclick="notificar(); fecharAviso()">Sim</button>
+				<button id="buttonSim" onclick="notificar()">Sim</button>
 				<button id="buttonNo" onclick="fecharAviso()">Não</button>
 			</div>
 			
@@ -68,6 +70,7 @@
 			
 			<div id="shadow" class="shadow" onclick="slidecloseagenda()">
 			</div>
+
 			<script src="js/script.js"></script>
 			<script src="js/agenda.js"></script>
 		</body>
