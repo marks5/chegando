@@ -20,11 +20,20 @@ function queryString(parameter) {
 var idPagina = queryString("id");
 console.log(idPagina);
 /*fim da busca ao id na url*/
+
 for (var i = 0; i < eventos.length; i++){
-	var data = eventos[i].data;
-	var horario = eventos[i].horario;
-	var local2 = eventos[i].local;
+	var arrumarData = function(datacomhorario){ //inverter a data e separar o horario
+        horario = datacomhorario.substring(11,16);
+        var data1 = datacomhorario.substring(0,10);
+        console.log(horario, data1);
+        var dataArray = data1.split("-");
+        dataFinal = dataArray[2] +"/"+ dataArray[1] + "/" + dataArray[0];
+        console.log(dataFinal);
+               }
+    arrumarData(dataHorario);
+	var nomelocal = eventos[i].nome;
 	var idevento = eventos[i].idevento;
+	console.log(idevento);
 	var idesporte = eventos[i].idesporte;
 	for (var a = 0; a < local.length; a++) {
 		if (eventos[i].idlocal == local[a].idlocal) {
@@ -51,10 +60,9 @@ for (var i = 0; i < eventos.length; i++){
 		}
 		var inserirInfos = '<div id="content"><h2 id="titulo">' + nomeEsporte +
 		'</h2><a href="'+ link +'"><button class="myButton">Regras</button></a>\
-		<div class="linhaEvento"><h3 class="tituloEvento">Data:</h3><p>'+ data +
-		'</p></div><div class="linhaEvento"><h3 class="tituloEvento">Times:</h3><p>'+ /*times*/"nao tem" +
-		'</div><div class="linhaEvento"><h3 class="tituloEvento">Horário:</h3><p>' + horario + 
-		'</p></div><div class="linhaEvento"><h3 class="tituloEvento">Local:</h3><p>'+ local2 +
+		<div class="linhaEvento"><h3 class="tituloEvento">Data:</h3><p>'+ dataFinal +
+		'</p></div><div class="linhaEvento"><h3 class="tituloEvento">Horário:</h3><p>' + horario + 
+		'</p></div><div class="linhaEvento"><h3 class="tituloEvento">Local:</h3><p>'+ nomelocal +
 		'</p></div><a href="mapa.html?latitude='+latitude+'&longitude='+longitude+'"><button class="myButton">Como chegar</button></a>'; //html
 		eventoUnico.innerHTML += inserirInfos;
 	}

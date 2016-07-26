@@ -31,7 +31,7 @@ for (var i=0; i< regras.length; i++) {  //se tiver vindo de esporte > modalidade
   
   if (regras[i].idesporte == idPagina){
     if (regras[i].idmodalidade == idModalidade){
-        if (regras[i].idcategorias == idCategoria ) {
+        if (regras[i].idcategoria == idCategoria ) {
           for (var e=0; e<esp.length; e++) { //buscar o nome do esporte no json de esportes 
             if (regras[i].idesporte == esp[e].idesporte) {
               var nomeEsporte = esp[e].nome;
@@ -45,7 +45,7 @@ for (var i=0; i< regras.length; i++) {  //se tiver vindo de esporte > modalidade
             };
           };
           for (var u=0; u<categoria.length; u++) { //buscar o nome da categoria no json de categorias
-            if (regras[i].idcategorias == categoria[u].idcategorias) {
+            if (regras[i].idcategoria == categoria[u].idcategoria) {
               var nomeCategoria = categoria[u].nome;
               console.log(nomeCategoria);
             };
@@ -65,7 +65,7 @@ if (idModalidade == false) { //se não tiver vindo de modalidade, e sim esporte 
   var regrasCategoria = document.getElementById("regrasCategoria");
   
   if (regras[i].idesporte == idPagina){
-        if (regras[i].idcategorias == idCategoria ) {
+        if (regras[i].idcategoria == idCategoria ) {
           for (var e=0; e<esp.length; e++) {
             if (regras[i].idesporte == esp[e].idesporte) {
               var nomeEsporte = esp[e].nome;
@@ -73,7 +73,7 @@ if (idModalidade == false) { //se não tiver vindo de modalidade, e sim esporte 
             };
           };
           for (var u=0; u<categoria.length; u++) {
-            if (regras[i].idcategorias == categoria[u].idcategorias) {
+            if (regras[i].idcategoria == categoria[u].idcategoria) {
               var nomeCategoria = categoria[u].nome;
               console.log(nomeCategoria);
             };

@@ -5,7 +5,6 @@ function setaridioma(ididioma)  {
 console.log(ididioma);
 
 window.localStorage.setItem("ididioma", ididioma);
-
   
 };
 
