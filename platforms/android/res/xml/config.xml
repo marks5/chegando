@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.marcioggs.cordovashowcase" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+<widget id="br.org.forsoft" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Camera">
         <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
@@ -46,12 +46,12 @@
         <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
-    <name>Cordova Showcase</name>
+    <name>AppOlimpiadas</name>
     <description>
-        A Cordova Showcase application.
+        Aplicativo para as olimp�adas Rio 2016
     </description>
     <author>
-        Márcio Gabriel and Michael Becker
+        Forsoft-Rio
     </author>
     <content src="index.html" />
     <preference name="LoadUrlTimeoutValue" value="70000" />

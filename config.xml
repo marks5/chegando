@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.marcioggs.cordovashowcase" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
-    <name>Cordova Showcase</name>
+<widget id="br.org.forsoft" version="1.0.0" xmlns="http://www.w3.org/ns/widgets">
+    <name>AppOlimpiadas</name>
     <description>
-        A Cordova Showcase application.
+        Aplicativo para as olimpíadas Rio 2016
     </description>
     <author>
-        MÃ¡rcio Gabriel and Michael Becker
+        Forsoft-Rio
     </author>
     <content src="index.html" />
     <allow-navigation href="*" />

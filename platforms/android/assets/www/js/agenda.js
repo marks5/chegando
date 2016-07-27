@@ -29,6 +29,7 @@ caldiaCelular();
 
 var dataCelular = (new Date().getFullYear() + "-" + (mesCelular) + "-" + (diaCelular)).toString();
 
+
 for (var i = 0; i < eventosTotal.length; i++) {
 	console.log((eventosTotal[i].data).toString())
 	console.log(dataCelular)
