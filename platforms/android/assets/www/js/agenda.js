@@ -1,7 +1,11 @@
 //tudo rodando \/ 
 
-var mesCelular = ""
-var pegarMes = new Date().getMonth()
+var mesCelular = "";
+var diaCelular = "";
+var eventos = null;
+var pegarMes = new Date().getMonth();
+var pegarDia = new Date().getDate();
+var img = null;
 function calmesCelular (){
 	
 	if ((pegarMes+1) < 10) {
@@ -12,9 +16,18 @@ function calmesCelular (){
 }
 calmesCelular();
 
-var dataCelular = (new Date().getFullYear() + "-" + (mesCelular) + "-" + new Date().getDate()).toString();
 
-var dataCelular = "2016-08-18"
+function caldiaCelular(){
+	if(pegarDia < 10){
+		diaCelular = "0" + pegarDia.toString();
+	} else {
+		diaCelular = pegarDia.toString();
+	}
+}
+caldiaCelular();
+
+
+var dataCelular = (new Date().getFullYear() + "-" + (mesCelular) + "-" + (diaCelular)).toString();
 
 for (var i = 0; i < eventosTotal.length; i++) {
 	console.log((eventosTotal[i].data).toString())
@@ -25,8 +38,9 @@ for (var i = 0; i < eventosTotal.length; i++) {
 		eventos = eventosTotal[i].conteudo;
 	}
 }
-
+if (eventos!=null){
 for (var i = 0; i < eventos.length; i++){
+	
 	var dataHorario = eventos[i].data;
 	var arrumarData = function(datacomhorario){ //inverter a data e separar o horario
                     horario = datacomhorario.substring(11,16);
@@ -38,43 +52,48 @@ for (var i = 0; i < eventos.length; i++){
                }
     arrumarData(dataHorario);
 
+
 	var idesporte = eventos[i].idesporte;
 	var idevento = eventos[i].idevento;
 	var link = "evento.html?id="+ idevento; 
 	
-
 	var listaEventos = document.getElementById("listaEventos");
 
-	for (var e = 0; e < esp.length; e++) {
+		for (var e = 0; e < esp.length; e++) {
 		if (esp[e].idesporte == idesporte) {
-			if (esp[e].icon_end == "Olimpico") {
-				var img = esp[e].nome.toLowerCase(); //cria a url da img nome_do_esporte
-				
-			} //coloca em letra minuscula
-			else {
-				var icone = esp[e].nome.toLowerCase();
-				var img = icone+"(P)"; //diz que é paralimpico
-			}
-			var linkimg = img.replace(/\s/g,""); //cria a url da img nome_do_esporte tirando os espaços do nome do esporte
-			var linkimg2 = removerAcentos(linkimg);
+			img = esp[e].idesporte
+			
 			nomeEsporte = esp[e].nome;
 			};
 		}
-		
-	var inserirInfos = '<div class="linha pc100"><div class="pc30"><a href="'+link+'">\
-	<img id="icon" src="images/'+ linkimg2 +'.png"/> </a></div><div class="pc70"><a href="'+link+'">\
+
+		var inserirInfos = '<div class="linha pc100"><div class="pc30"><a href="'+link+'">\
+	<img id="icon" src="images/'+ img +'.png"/> </a></div><div class="pc70"><a href="'+link+'">\
 	<h2 class="fonth2">'+ nomeEsporte +'</h2> <p class="tamfont">'+ dataFinal + '-' + horario +'</p>\
 	<p class="tamfont">'+ eventos[i].nome+'</p></a></div>\
-	<img id="bell" align="right" src="images/bell.png" onclick="avisonotificacao()"/></div>'; //html
+	<img id="bell" align="right" src="images/bell.png" onclick="avisonotificacao('+eventos[i].idevento+',\''+nomeEsporte+'\',\''+eventos[i].data+'\')"/></div>'; //html
 	listaEventos.innerHTML += inserirInfos;
-};
+}
 
+}else{
+	ididioma = window.localStorage.getItem("ididioma");
+	if (ididioma == 1){
+	var inserirInfos = '<h1 id="naohaevento">Não há eventos hoje : (</h1>';
+	var listaEventos = document.getElementById("listaEventos");
+	listaEventos.innerHTML = inserirInfos;
+	}
+	else{
+	var inserirInfos = '<h1 id="naohaevento">There are no events today : (</h1>';
+	var listaEventos = document.getElementById("listaEventos");
+	listaEventos.innerHTML = inserirInfos;
+	}
+}
 
-function avisonotificacao(){
+/*function avisonotificacao(){
 	document.getElementById("shadow").className += " is-active";
 	document.getElementById("alertaNotificacao").style.display = "inherit";
 	document.getElementById("alertaNotificacao").style.zIndex = "200";
-}
+}*/
 function fecharAviso(){
 	document.getElementById("shadow").className = "shadow";
 	document.getElementById("alertaNotificacao").style.display = "none";
@@ -82,8 +101,6 @@ function fecharAviso(){
 function notificar(){
 	console.log("funciona");
 }
-
-
 
 function removerAcentos(stringcomacento){
 	var string = stringcomacento;

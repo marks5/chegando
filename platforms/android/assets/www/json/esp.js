@@ -1,335 +1,781 @@
-var esp =[  
+var espJSON =[  
    {  
       "idesporte":1,
+      "ChaveEsporte":1,
       "nome":"Atletismo",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":2,
-      "nome":"Badminton",
+      "ChaveEsporte":2,
+      "nome":"Badminton ",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":3,
+      "ChaveEsporte":3,
       "nome":"Basquetebol",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":4,
+      "ChaveEsporte":4,
       "nome":"Boxe",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":5,
-      "nome":"Canoagem",
+      "ChaveEsporte":5,
+      "nome":"Canoagem ",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":6,
-      "nome":"Ciclismo",
+      "ChaveEsporte":6,
+      "nome":"Ciclismo ",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":7,
+      "ChaveEsporte":7,
       "nome":"Esgrima",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":8,
+      "ChaveEsporte":8,
       "nome":"Futebol",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":9,
-      "nome":"Ginástica",
+      "ChaveEsporte":9,
+      "nome":"Ginástica ",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":10,
+      "ChaveEsporte":10,
       "nome":"Golfe",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":11,
+      "ChaveEsporte":11,
       "nome":"Handebol",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":12,
+      "ChaveEsporte":12,
       "nome":"Hipismo",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":13,
+      "ChaveEsporte":13,
       "nome":"Hóquei sobre Grama",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":14,
+      "ChaveEsporte":14,
       "nome":"Judô",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":15,
+      "ChaveEsporte":15,
       "nome":"Levantamento de Peso",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":16,
+      "ChaveEsporte":16,
       "nome":"Luta Olímpica",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":17,
+      "ChaveEsporte":17,
       "nome":"Maratonas Aquáticas",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":18,
+      "ChaveEsporte":18,
       "nome":"Nado Sincronizado",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":19,
+      "ChaveEsporte":19,
       "nome":"Natação",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":20,
+      "ChaveEsporte":20,
       "nome":"Pentatlo Moderno",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":21,
+      "ChaveEsporte":21,
       "nome":"Polo Aquático",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":22,
-      "nome":"Remo",
+      "ChaveEsporte":22,
+      "nome":"Remo ",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":23,
+      "ChaveEsporte":23,
       "nome":"Rugby de 7",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":24,
+      "ChaveEsporte":24,
       "nome":"Saltos Ornamentais",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":25,
-      "nome":"Taekwondo",
+      "ChaveEsporte":25,
+      "nome":"Taekwondo ",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":26,
-      "nome":"Tênis Olimpico",
+      "ChaveEsporte":26,
+      "nome":"Tênis Olímpico",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":27,
+      "ChaveEsporte":27,
       "nome":"Tênis de Mesa",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":28,
+      "ChaveEsporte":28,
       "nome":"Tiro com Arco",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":29,
+      "ChaveEsporte":29,
       "nome":"Tiro Esportivo",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":30,
+      "ChaveEsporte":30,
       "nome":"Triatlo",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":31,
+      "ChaveEsporte":31,
       "nome":"Vela",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":32,
+      "ChaveEsporte":32,
       "nome":"Vôlei de Praia",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
    {  
       "idesporte":33,
+      "ChaveEsporte":33,
       "nome":"Voleibol",
       "ididioma":1,
-      "icon_end":"Olimpico"
+      "end_icon":"Olimpico"
    },
-
    {  
       "idesporte":34,
+      "ChaveEsporte":34,
       "nome":"Atletismo",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
-
-
    {  
       "idesporte":35,
-      "nome":"Basquetebol cadeira de rodas",
+      "ChaveEsporte":35,
+      "nome":"Basquetebol em cadeira de rodas",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":36,
+      "ChaveEsporte":36,
       "nome":"Bocha",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":37,
+      "ChaveEsporte":37,
       "nome":"Canoagem ",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":38,
+      "ChaveEsporte":38,
       "nome":"Ciclismo ",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":39,
-      "nome":"Esgrima cadeira de rodas",
+      "ChaveEsporte":39,
+      "nome":"Esgrima em cadeira de rodas",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":40,
+      "ChaveEsporte":40,
       "nome":"Futebol de 5",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":41,
+      "ChaveEsporte":41,
       "nome":"Futebol de 7",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":42,
+      "ChaveEsporte":42,
       "nome":"Goalball",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":43,
+      "ChaveEsporte":43,
       "nome":"Halterofilismo",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":44,
+      "ChaveEsporte":44,
       "nome":"Hipismo",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":45,
+      "ChaveEsporte":45,
       "nome":"Judo",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":46,
+      "ChaveEsporte":46,
       "nome":"Natação",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":47,
-      "nome":"Remo",
+      "ChaveEsporte":47,
+      "nome":"Remo ",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":48,
-      "nome":"Rugby cadeira de rodas",
+      "ChaveEsporte":48,
+      "nome":"Rugby em cadeira de rodas",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":49,
+      "ChaveEsporte":49,
       "nome":"Tênis de mesa",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":50,
-      "nome":"Tênis cadeira de rodas",
+      "ChaveEsporte":50,
+      "nome":"Tênis em cadeira de rodas",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":51,
+      "ChaveEsporte":51,
       "nome":"Tiro com arco",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":52,
+      "ChaveEsporte":52,
       "nome":"Tiro Esportivo",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":53,
+      "ChaveEsporte":53,
       "nome":"Triatlo",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":54,
+      "ChaveEsporte":54,
       "nome":"Vela",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
    },
    {  
       "idesporte":55,
+      "ChaveEsporte":55,
       "nome":"Voleibol sentado",
       "ididioma":1,
-      "icon_end":"Paralímpico"
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":1,
+      "ChaveEsporte":56,
+      "nome":"Athletics",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":2,
+      "ChaveEsporte":57,
+      "nome":"Badminton",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":3,
+      "ChaveEsporte":58,
+      "nome":"Basketball",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":4,
+      "ChaveEsporte":59,
+      "nome":"Boxing",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":5,
+      "ChaveEsporte":60,
+      "nome":"Canoe",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":6,
+      "ChaveEsporte":61,
+      "nome":"Cycling",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":7,
+      "ChaveEsporte":62,
+      "nome":"Fencing",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":8,
+      "ChaveEsporte":63,
+      "nome":"Football",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":9,
+      "ChaveEsporte":64,
+      "nome":"Gymnastics",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":10,
+      "ChaveEsporte":65,
+      "nome":"Golf",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":11,
+      "ChaveEsporte":66,
+      "nome":"Handball",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":12,
+      "ChaveEsporte":67,
+      "nome":"Equestrian",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":13,
+      "ChaveEsporte":68,
+      "nome":"Hockey",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":14,
+      "ChaveEsporte":69,
+      "nome":"Judo",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":15,
+      "ChaveEsporte":70,
+      "nome":"Weightlifting",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":16,
+      "ChaveEsporte":71,
+      "nome":"Wrestling",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":17,
+      "ChaveEsporte":72,
+      "nome":"Marathon Swimming",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":18,
+      "ChaveEsporte":73,
+      "nome":"Synchronised Swimming",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":19,
+      "ChaveEsporte":74,
+      "nome":"Swimming",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":20,
+      "ChaveEsporte":75,
+      "nome":"Modern Pentathlon",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":21,
+      "ChaveEsporte":76,
+      "nome":"Water Polo",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":22,
+      "ChaveEsporte":77,
+      "nome":"Rowing",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":23,
+      "ChaveEsporte":78,
+      "nome":"Rugby Sevens",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":24,
+      "ChaveEsporte":79,
+      "nome":"Diving",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":25,
+      "ChaveEsporte":80,
+      "nome":"Taekwondo",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":26,
+      "ChaveEsporte":81,
+      "nome":"Tennis",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":27,
+      "ChaveEsporte":82,
+      "nome":"Table Tennis",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":28,
+      "ChaveEsporte":83,
+      "nome":"Archery",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":29,
+      "ChaveEsporte":84,
+      "nome":"Shooting",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":30,
+      "ChaveEsporte":85,
+      "nome":"Triathlon",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":31,
+      "ChaveEsporte":86,
+      "nome":"Sailing",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":32,
+      "ChaveEsporte":87,
+      "nome":"Beach volleyball",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":33,
+      "ChaveEsporte":88,
+      "nome":"Volleyball",
+      "ididioma":2,
+      "end_icon":"Olimpico"
+   },
+   {  
+      "idesporte":34,
+      "ChaveEsporte":89,
+      "nome":"Athletics",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":35,
+      "ChaveEsporte":90,
+      "nome":"Wheelchair Basketball",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":36,
+      "ChaveEsporte":91,
+      "nome":"Boccia",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":37,
+      "ChaveEsporte":92,
+      "nome":"Canoe ",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":38,
+      "ChaveEsporte":93,
+      "nome":"Cycling",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":39,
+      "ChaveEsporte":94,
+      "nome":"Wheelchair Fencing",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":40,
+      "ChaveEsporte":95,
+      "nome":"Football 5-a-Side",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":41,
+      "ChaveEsporte":96,
+      "nome":"football 7-a-Side",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":42,
+      "ChaveEsporte":97,
+      "nome":"Goalball",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":43,
+      "ChaveEsporte":98,
+      "nome":"Powerlifting",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":44,
+      "ChaveEsporte":99,
+      "nome":"Equestrian",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":45,
+      "ChaveEsporte":100,
+      "nome":"Judo",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":46,
+      "ChaveEsporte":101,
+      "nome":"Swimming",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":47,
+      "ChaveEsporte":102,
+      "nome":"Rowing",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":48,
+      "ChaveEsporte":103,
+      "nome":"Wheelchair Rugby",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":49,
+      "ChaveEsporte":104,
+      "nome":"Table Tennis",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":50,
+      "ChaveEsporte":105,
+      "nome":"Wheelchair Tennis",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":51,
+      "ChaveEsporte":106,
+      "nome":"Archery",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":52,
+      "ChaveEsporte":107,
+      "nome":"Shooting",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":53,
+      "ChaveEsporte":108,
+      "nome":"Triathlon",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":54,
+      "ChaveEsporte":109,
+      "nome":"Sailing",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
+   },
+   {  
+      "idesporte":55,
+      "ChaveEsporte":110,
+      "nome":"Sitting Volleyball",
+      "ididioma":2,
+      "end_icon":"Paralimpico"
    }
-]
+];
+
+var esp = [];
+var ididioma = window.localStorage.getItem("ididioma", ididioma);
+
+for ( var i = 0; i < espJSON.length; i++ ) {
+  if (ididioma == espJSON[i].ididioma){
+    esp.push(espJSON[i]);
+ }
+}

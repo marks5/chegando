@@ -28,7 +28,7 @@ if (idModalidade == false) { //se nao tiver vindo de uma modalidade, e sim diret
 for (var i=0; i < categoria.length; i++) {
 	if (categoria[i].idesporte == idPagina) { //se o id for igual o da pagina é a categ do esporte selecionado
 		var categ = document.getElementById("categ");
-    var link = "descricao.html?id=" + idPagina +'&idCat=' + categoria[i].idcategorias;
+    var link = "descricao.html?id=" + idPagina +'&idCat=' + categoria[i].idcategoria;
 		if (i % 2 == 0) {
         var inserirInfos = '<a href="' + link +
         '"><li class="par">' + categoria[i].nome + '</li></a>'
@@ -46,7 +46,7 @@ for (var i=0; i < categoria.length; i++) {
   if (categoria[i].idesporte == idPagina) {
     if (categoria[i].idmodalidade == idModalidade) { //pra selecionar as modalidades só da categoria escolhida
     var categ = document.getElementById("categ");
-    var link = "descricao.html?id=" + idPagina +'&idMod=' + idModalidade + '&idCat=' + categoria[i].idcategorias;
+    var link = "descricao.html?id=" + idPagina +'&idMod=' + idModalidade + '&idCat=' + categoria[i].idcategoria;
     console.log(link);
       if (i % 2 == 0) {
         var inserirInfos = '<a href="' + link +

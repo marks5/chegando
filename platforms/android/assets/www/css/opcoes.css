@@ -38,6 +38,10 @@
   transition: .4s;
 }
 
+.devs {
+  font-size: 1em;
+}
+
 .slider:before {
   position: absolute;
   content: "";

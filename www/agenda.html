@@ -10,6 +10,7 @@
 		<script src="json/eventos.js"></script>
 		<script src="json/local.js"></script>
 		<script src="js/notificacao.js"></script>
+		<script src="js/pesquisar.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
 		
 		<title>Agenda</title>	
@@ -59,9 +60,7 @@
 			<div id="content">
 				<div class="linha" id="search">
 						<section class="main">
-							<form class="search" method="post" action="index.html" >
-								<input type="text" name="q" placeholder="Search..." />
-							</form>
+								<input type="text" id="pesquisaAgenda" name="q" placeholder="Search..." onkeydown = "if (event.keyCode == 13) {pesquisar();}"/>
 						</section>
 				</div>
 				<div id="listaEventos">
